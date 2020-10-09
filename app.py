@@ -13,7 +13,7 @@ def index():
         for line in f.readlines():
             print(line)
             a = line.split(",")
-            if(a[0]=="21007"):
+            if(a[0]=="00001"):
                 return a[4]
         f.close()
     except Exception:
@@ -49,7 +49,7 @@ def callback():
         except Exception:
             sendText(user,"ขออภัย..ไม่สามารถเปิดไฟล์ได้")
     elif(userText=="ไอ้บ้า"):
-        sendText(user,"ไม่บ้านะ")
+        sendText(user,"บ้าที่รักเทออ")
 
     return '',200
 
